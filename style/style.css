@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
+
+
+html, body {
+    min-height: 100vh;
+    height: min-content;
+    font-family: 'Fondamento', cursive;
+    font-weight: bold;
+    /* font-size: 1vw; */
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 50%;
+    max-width: 50em;
+    margin: 2vh auto;
+    margin-top: 0;
+    background-image: url("../imgs/scroll-background-no-borders.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+header, main {
+    margin: 2vh 0 2vh 0;
+}
+
+label {
+    font-size: 1.5vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: initial;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+hr {
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px 0 0 0;
+    border-radius: 20px;
+}
+hr:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 2px 0;
+    border-radius: 20px;
+}
+
+#tilia {
+    position: absolute;
+    right: 44%;
+    top: 44%;
+}
+
+#hesturia {
+    position: absolute;
+    right: 27%;
+    top: 51%;
+    /* z-index: 1; */
+}
+#vinberia {
+    position: absolute;
+    right: 55%;
+    top: 55.5%;
+    /* z-index: 1; */
+}
+#landmeria {
+    position: absolute;
+    right: 57.5%;
+    top: 37%;
+    /* z-index: 1; */
+}
+#eyjan {
+    position: absolute;
+    right: 55.8%;
+    top: 16.5%;
+    /* z-index: 1; */
+}
+#sania {
+    position: absolute;
+    right: 42%;
+    top: 62%;
+    /* z-index: 1; */
+}
+#veturia {
+    position: absolute;
+    right: 54.5%;
+    top: 26.5%;
+    /* z-index: 1; */
+}
+
+#hidden-div {
+    height: 20vh;
+    position: relative;
+    min-width: min-content;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+
+.nav-el {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 30%;
+    /* border-bottom: 1px solid rgba(0,0,0,0); */
+}
+
+.nav-el:hover, div label:hover {
+    /* border-bottom: 1px solid rgba(0,0,0,0.5); */
+    letter-spacing: 1px;
+    transition: 0.5s ease-in-out;
+}
+
+
+div label {
+    display: inline-block;
+    width: 190%;
+    text-align: center;
+    line-height: 25px;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+div label:hover {
+    border-bottom: none;
+    font-size: 1.2vw;
+}
+
+.nav-el:not(:hover), div label:not(:hover) {
+    transition: 0.5s ease-in-out;
+}
+
+
+.intro-top-name {
+text-align: center;
+}
+.intro-top-name h1 {
+    margin: 0;
+    font-size: 2.5vw;
+}
+
+.herald-image {
+    width: 55%;
+    position: relative;
+}
+
+.intro-text {
+    text-align: justify;
+}
+
+.hidden-p {
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 5; /* number of lines to show */
+   -webkit-box-orient: vertical;
+} 
+
+/* .hidden-img {
+    height: 100%;
+    max-width: 100%;
+    opacity: 0.45;
+    position: absolute;
+    margin: 5% 0; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+
+.chosenRegion {
+    color: green;
+}
+.map {
+    /* text-align: center; */
+    position: relative;
+    background: url("../imgs/paper-transparent.png") no-repeat center center;
+    background-size: 95%;
+    /* width: 100%; */
+}
+
+.map-img {
+    width: 50%;
+    padding: 10%;
+    position: relative;
+    left: 23%;
+    transform: scaleX(-1) scaleY(-1);
+}
+.wind-rose {
+    position: absolute;
+    width: 29%;
+    height: 32%;
+    top: 55%;
+    right: 62%;
+    opacity: 0.8;
+}
+
+.sea-monster {
+    position: absolute;
+    width: 9%;
+    height: 9%;
+    top: 26%;
+    right: 65%;
+    opacity: 0.8;
+}
+
+.ship-drawing {
+    position: absolute;
+    width: 9%;
+    height: 9%;
+    top: 25%;
+    right: 32%;
+    opacity: 0.8;
+}
+
+.hidden-div-background {
+    /* background-image: url("../imgs/edited/round-shield-transparent-edited.png"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: contain; */
+    background-size: 65%;
+}
+
+/* Zapewnienie przezroczystego tła bez obrabiania obrazka */
+/* .hidden-div-background {
+    position: relative;
+    z-index: 1;
+}
+
+
+.hidden-div-background::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    opacity: .4; 
+    z-index: -1;
+    background-image: url("../imgs/axe-transparent-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+
+
+
+
+.region-description-container {
+    position: relative;
+    height: 30vh;
+    opacity: 1;
+}
+
+.unit-and-scenario-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10%;
+    height: 50vh;
+}
+
+.special-unit-container, .scenarios-container {
+    width: 50%;
+    min-width: 190px;
+}
+
+/* stylowanie nowego przycisku */
+
+.center {
+    width: 180px;
+    height: 60px;
+    position: absolute;
+}
+
+.btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #000;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+
+.btn:hover {
+    transition: 1s ease-in-out;
+}
+
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.btn span {
+    font-family: 'Fondamento', cursive;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+/* Strona scenariusze */
+.category-label {
+    width: auto;
+}
+
+.category-label:hover {
+    border-bottom: none;
+    font-size: 1vw;
+}
+
+input[type="text"] {
+    display: block;
+}
+textarea {
+    width: 100%;
+}

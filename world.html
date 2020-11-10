@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style/style.css">
+    
+    <title>World</title>
+</head>
+<img src="imgs/scroll-background-no-borders.jpg" alt="" style="display: none;">
+<body>
+    
+<div class="hidden-body" hidden style="opacity: 0;">
+    <header>
+        <!-- <div id="logo"></div> -->
+        <div class="nav">
+            <span class="nav-el"><a href="#">Świat</a></span>
+            <span class="nav-el"><a href="create-character.html">Stwórz postać</a></span>
+            <span class="nav-el"><a href="scenarios.html">Scenariusze</a></span>
+        </div>
+    </header>
+
+    <hr>
+    
+    <main>
+        <section class="intro">
+            <div class="intro-top-name">
+                <h1>Cesarstwo Europejskie</h1>
+                <img src="imgs/map-drawing-short.png" alt="" class="herald-image">
+            </div>
+            <div class="intro-text">
+                <p>„Od czasu Początku Europa pogrążona była w wojnie. Ludzie nie znali pokoju, nie znali też prawa. Znali strach i śmierć. Wiela krwi płynęło wtedy strumieniami, a co rzeki już przyjąć nie mogły, wsiąkało w ziemię. Zboże rosło krwawe, chleb ludzie krwawy z niego lepili i znów krwią braterską pola urzyźniali.</p>
+                <p>Chaos ten zmęczył znacznie bogów, bo zapomnieli o nich ludzie w swej pysze i gniewie. Zesłali wtedy człowieka imieniem Elvis, mocą wielką i mądrością go obdarzywszy. Miał zakończyć erę wojen i dać ludziom pokój. Sto lat mu zajęło jednoczenie kontynentu, ale namaszczenie boskie uchroniło go przed srebrem głowy i słabością ciała.</p>
+                <p>Dwaj ostatni wrogowie jego, lubujący się w wojnie i okrucieństwie, nie chcieli, aby boski Wybraniec uwolnił ludzi od bólu i cierpienia. Uknuli spisek, wciągając Pomazańca w jeszcze jedną wojnę.</p>
+                <p>Ostatnia Wojna, nazywana też Wojną Dzieci, była najbardziej krwawą ze wszystkich. Przeraziła nawet tych, którzy ją wywołali. Poddali się wtedy Pomazańcowi, ale opamiętali się za późno, gdyż ten już nie miał w sercu litości. Miał tylko ból – ból tysięcy pomordowanych. Wodzów zabił z takim okrucieństwem, z jakim oni wcześniej mordowali niewinnych.</p>
+                <p>Ich plemiona zaś wygnał na pogranicza Europy – Veturów, za to że tak kochali wojnę, wygnał na wschód, gdzie pełnić mieli wieczną straż nad jej granicami – tam nigdy pokoju zaznać nie mieli. Eyjanów, którzy za okrucieństwa odpowiadali największe, zesłał na zachodnie wyspy, aby równie okrutne morze od dobrych ludzi ich oddzielało. Tam z żywiołem mieli się zmagać bezlitosnym po wsze czasy.</p>
+                <p>
+                Później Elvis zasmucił się bardzo tym co uczynił i z tego smutku umarł. Kiedy poddani złożyli go w grobowcu, bogowie zapłakali gorzko nad jego ciałem. Płakali przez rok cały i jeden dzień, aż łzy zatopiły grobowiec wraz z doliną, w której stał grób, tworząc Morze Łez.
+                Śmierć Elvisa zakończyła ostatecznie Erę Wojen. W ostatniej woli Pomazaniec zostawił ludziom Cesarstwo Europejskie, i od tego dnia liczone są Lata Cesarstwa. W swej wielkiej mądrości wyznaczył też kolejnych cesarzy na setki lat wprzód, Mędrcom powierzając pieczę nad tą wiedzą. Tilowie, pierwszy lud, który za nim podążył sto lat wcześniej, był najszlachetniejszy ze wszystkich i prawy. Im więc nadał zaszczyt i obowiązek strzeżenia Mędrców, aby żaden wróg nie poznał imion następców i nie zechciał w złej woli swojej ich wykorzystać.”
+                </p>
+            </div>
+        </section>
+        <section class="map">
+            <img src="imgs/borders-transparent.jpg" alt="Map of the World" class="map-img">
+            <img src="imgs/wind-rose.png" alt="Map Wind Rose" class="wind-rose">
+            <img src="imgs/sea-monster-transparent.png" alt="Sea Monster" class="sea-monster">
+            <img src="imgs/ship-transparent.png" alt="" class="ship-drawing">
+            <div id="tilia">
+                <input id="Tilia" type="radio" name="region" value="Tilia">
+                <label for="Tilia" id="tilia-label">Tilia</label>
+            </div>
+            <div id="hesturia">
+                <input id="Hesturia" type="radio" name="region" value="Hesturia">
+                <label for="Hesturia" id="hesturia-label">Hesturia</label>
+            </div>
+            <div id="vinberia">
+                <input id="Vinberia" type="radio" name="region" value="Vinberia">
+                <label for="Vinberia" id="vinberia-label">Vinberia</label>
+            </div>
+            <div id="landmeria">
+                <input id="Landmeria" type="radio" name="region" value="Landmeria">
+                <label for="Landmeria" id="landmeria-label">Landmeria</label>
+            </div>
+            <div id="eyjan">
+                <input id="Eyjan" type="radio" name="region" value="Eyjan">
+                <label for="Eyjan" id="eyjan-label">Eyjan</label>
+            </div>
+            <div id="sania">
+                <input id="Sania" type="radio" name="region" value="Sania">
+                <label for="Sania" id="sania-label">Sania</label>
+            </div>
+            <div id="veturia">
+                <input id="Veturia" type="radio" name="region" value="Veturia">
+                <label for="Veturia" id="veturia-label">Veturia</label>
+            </div>
+        </section>
+        <div id="hidden-div" hidden>
+            <div class="hidden-div-background">
+                <div class="region-description-container">
+                    <!-- <img class="hidden-img" src="" alt=""> -->
+                    <h2 class="hidden-h2"></h2>
+                    <h3 class="hidden-h3"></h3>
+                    <p class="hidden-p"></p>
+                    <!-- <button class="read-more-btn">Czytaj więcej</button> -->
+                    <div class="center">
+                        <button class="btn read-more-btn">
+                        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                        </svg>
+                        <span>CZYTAJ WIĘCEJ</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="unit-and-scenario-container">
+                    <div class="special-unit-container">
+                        <h4>UNIKALNA KLASA: <span class="special-unit-name"></span></h4>
+                        <p class="special-unit-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quo voluptas impedit, aut magni quod reprehenderit ab mollitia. Autem, dignissimos.</p>
+                        <!-- nowy przycisk -->
+                        <div class="center">
+                            <button class="btn special-unit-btn">
+                            <a href="create-character.html">
+                                <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                                </svg>
+                                <span>STWÓRZ POSTAĆ</span>
+                                </button>
+                            </a>
+                        </div>
+                        <!-- koniec nowego przycisku -->
+                    </div>
+                    <div class="scenarios-container">
+                        <h4 class="scenarios-name">OSTATNIE WYDARZENIA</h4>
+                        <p class="scenarios-description">Reiciendis voluptatem aliquam quisquam nostrum, sapiente laborum illum possimus distinctio, minus est recusandae soluta dolorem cum libero.</p>
+                        <p class="scenarios-description">Sapiente, nemo magnam!</p>
+                        <p class="scenarios-description">Iste, iure alias velit rem ipsam provident repellat nemo optio explicabo?</p>
+                        <!-- nowy przycisk -->
+                        <div class="center">
+                            <button class="btn">
+                            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                                <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                                <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                            </svg>
+                            <span>POKAŻ SCENARIUSZE</span>
+                            </button>
+                        </div>
+                        <!-- koniec nowego przycisku -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</div>
+
+
+
+<script src="js/index.js"></script>
+</body>
+</html>

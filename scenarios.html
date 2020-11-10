@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style/style.css">
+    
+    <title>Scenarios</title>
+    
+</head>
+<img src="imgs/scroll-background-no-borders.jpg" alt="" style="display: none;">
+<body>
+    
+    <div class="hidden-body" hidden style="opacity: 0;">
+        <header>
+            <!-- <div id="logo"></div> -->
+            <div class="nav">
+                <span class="nav-el"><a href="world.html">Świat</a></span>
+                <span class="nav-el"><a href="create-character.html">Stwórz postać</a></span>
+                <span class="nav-el"><a href="#">Scenariusze</a></span>
+            </div>
+        </header>
+    
+        <hr>
+        
+        <main>
+            <h2>Witaj w bibliotece!</h2>
+
+            <div class="hiddenForAdmin" hidden>
+                <div class="category-el">
+                    <input id="dreams" type="checkbox" name="category" value="dreams">
+                    <label for="dreams" class="category-label">Sen</label>
+                </div>
+                <div class="category-el">
+                    <input id="shorties" type="checkbox" name="category" value="shorties">
+                    <label for="shorties" class="category-label">Krótki pomysł</label>
+                </div>
+                <div class="category-el">
+                    <input id="scenes" type="checkbox" name="category" value="scenes">
+                    <label for="scenes" class="category-label">Krótka scena</label>
+                </div>
+                <input type="text" placeholder="TYTUŁ">
+                <textarea name="" id="" cols="30" rows="10" placeholder="TREŚĆ"></textarea>
+            </div>
+        </main>
+        <footer>
+        </footer>
+    </div>
+    
+    <script src="js/index.js"></script>
+</body>
+<script>
+    setTimeout(function() {
+        let admin = "Zuzanna lubi je tylko jesienią";
+        let password = prompt("Najlepsze kasztany są na placu Pigalle", "Nie wiem. Nie lubię kasztanów.");
+
+        password == admin ? adminLogged() : alert("Witaj Panie w największym zbiorze manuskryptów")
+
+    }, 250);
+    let adminLogged = function () {
+        alert("Witaj Panie. Pióro i inkaust już są gotowe.");
+        document.querySelector("h2").innerHTML = "Proszę usiąść, mój Panie";
+        document.querySelector(".hiddenForAdmin").removeAttribute("hidden");
+    }
+    
+</script>
+</html>
