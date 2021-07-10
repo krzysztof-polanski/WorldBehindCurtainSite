@@ -1,3 +1,5 @@
+import { Tilia } from 'region-description.js';
+
 let a = document.querySelectorAll("a");
 let head = document.querySelector("header");
 let intr = document.querySelector(".intro");
@@ -13,7 +15,7 @@ let regIcon = document.querySelector(".hidden-img");
 let readMoreBtn = document.querySelector(".read-more-btn");
 let specUnitName = document.querySelector(".special-unit-name");
 
-
+console.log(Tilia);
 // Powolne wyłanianie się treści przy załadowaniu strony
 document.body.onload = function() {
     setTimeout(function(){
