@@ -1,4 +1,4 @@
-import { Tilia } from 'region-description.js';
+// import { Tilia } from 'region-description.js';
 
 let a = document.querySelectorAll("a");
 let head = document.querySelector("header");
@@ -54,32 +54,37 @@ for (let aTag = 0; aTag < a.length; aTag++) {
 
 
 // Pokazanie opisu ragionu na stronie głównej po kliknięciu w nazwę regionu na mapie
-map.addEventListener("change", function() {
-    for (let ar = 0; ar < radio.length; ar++) {
-        if (radio[ar].checked) {
-            let regionName = radio[ar].attributes.value.value;
-            console.log("You checked " + regionName);
-            
-            for ( let reg = 0; reg < regions.length; reg++ ) {
-                if ( regions[reg].rName == regionName.toUpperCase() ) {
-                    regName.innerHTML = regions[reg].rName;
-                    regCap.innerHTML = "Stolica: " + regions[reg].rCap;
-                    regDesc.innerHTML = regions[reg].shortInfo;
-                    specUnitName.innerHTML = regions[reg].class;
-                    hidBackImg.style.backgroundImage = "url('imgs/edited/" + regions[reg].icon + "')"
+if (map) {
+    map.addEventListener("change", function() {
+        for (let ar = 0; ar < radio.length; ar++) {
+            if (radio[ar].checked) {
+                let regionName = radio[ar].attributes.value.value;
+                console.log("You checked " + regionName);
+                
+                for ( let reg = 0; reg < regions.length; reg++ ) {
+                    if ( regions[reg].rName == regionName.toUpperCase() ) {
+                        regName.innerHTML = regions[reg].rName;
+                        regCap.innerHTML = "Stolica: " + regions[reg].rCap;
+                        regDesc.innerHTML = regions[reg].shortInfo;
+                        specUnitName.innerHTML = regions[reg].class;
+                        hidBackImg.style.backgroundImage = "url('imgs/edited/" + regions[reg].icon + "')"
+                    }
                 }
+                regDesc.classList.add("hidden-p");
+                readMoreBtn.removeAttribute("hidden");
+                // hidBackImg.style.backgroundImage = "url('imgs/edited/round-shield-transparent-edited.png')";
+                region.removeAttribute("hidden");
+                scrollTo(0, ( head.scrollHeight + intr.scrollHeight + map.scrollHeight));
             }
-            regDesc.classList.add("hidden-p");
-            readMoreBtn.removeAttribute("hidden");
-            // hidBackImg.style.backgroundImage = "url('imgs/edited/round-shield-transparent-edited.png')";
-            region.removeAttribute("hidden");
-            scrollTo(0, ( head.scrollHeight + intr.scrollHeight + map.scrollHeight));
         }
-    }
-})
+    })
+}
+
 
 // Pokazanie reszty opisu regionu po naciśnięciu przycisku "Czytaj Więcej"
-readMoreBtn.addEventListener("click", showMoreAndRmvBtn);
+if (readMoreBtn) {
+    readMoreBtn.addEventListener("click", showMoreAndRmvBtn);
+}
 
 
 
